@@ -1,4 +1,5 @@
 #include <string>
+#include <bitset>
 #include <iostream>
 using namespace std;
 
@@ -17,14 +18,13 @@ public:
 
 void Dissembler::parser(string source) {
 	
-	string opcode;
 	
-	for (int i =0; i < 6; i++) {
-		
-		opcode += source[i];
-	}
-	
+
+	bitset<6>  opcode(source);
+
 	cout << opcode << endl;
+	
+
 
 }
 
