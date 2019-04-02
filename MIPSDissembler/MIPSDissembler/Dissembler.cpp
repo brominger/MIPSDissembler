@@ -1,4 +1,5 @@
 #include <string>
+#include <iostream>
 using namespace std;
 
 
@@ -15,6 +16,15 @@ public:
 };
 
 void Dissembler::parser(string source) {
+	
+	string opcode;
+	
+	for (int i =0; i < 6; i++) {
+		
+		opcode += source[i];
+	}
+	
+	cout << opcode << endl;
 
 }
 
